@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='css/inicio.css')}}">
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='css/template.css')}}">
+    -->
+
+    <link rel= "stylesheet" type= "text/css" href="css/inicio.css">
+    <link rel= "stylesheet" type= "text/css" href="css/template.css">
+    <link rel="stylesheet" href="css/iniciosesion.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Cubi | Inicio</title>
+    <!--
+    <link rel="icon"  href="{{ url_for('static', filename='cubi_logo.svg')}}" sizes="any">
+    -->
+    <link rel="icon"  href="iconos/cubi_logo.svg" sizes="any">
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar m-L-Nav" href="/">
+                <!--
+                <img class="logo" src="{{ url_for('static', filename='Untitled-1.svg')}}" alt="Logo">
+                -->
+                
+                <img class="logo" src="iconos/cubi_logo.svg" alt="Logo">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="large material-icons navToggler">menu</i>
+            </button>
+    
+            <div class="topnav collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="inicio.html"><p class="btn">Inicio</p><span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="mis-cursos.html"><p class="btn">Cursos</p></a></li>
+                    <li class="nav-item dropdown format3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p class="btn">Más</p>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Foro</a>
+                            <a class="dropdown-item" href="materiales.html">Materiales</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav m-R-Nav">
+                    <li class="nav-item"><a class="nav-link" href="#"><p class="btn">Planes</p></a></li>
+                    <li class="nav-item dropdown format3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p class="btn">Nombre apellido</p>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Reanudar última clase</a>
+                            <a class="dropdown-item" href="mis-cursos.html">Cursos</a>
+                            <a class="dropdown-item" href="#">Ver Anotaciones</a>
+                            <a class="dropdown-item" href="{{ url_for('user.profile') }}">Perfil</a>
+                            <a class="dropdown-item" href="#">Configuración</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="{{ url_for('user.logout') }}">Cerrar Sesión</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="gen-under" style="background-color: #8F53FF;">
+            <div class="iniciosesion">
+                <img class="iniciosesion-img" src="iconos/Login.svg" alt="">
+                <div class="iniciosesion-login down-up">
+                    <h3 class="iniciosesion-title h-mord h-bold">Inicia Sesión</h3>
+                    <form class="iniciosesion-form" action="" method="post">
+                        <input class="iniciosesion-form-input" type="text" placeholder="correo@example.com"/>
+                        <input class="iniciosesion-form-input" type="password" placeholder="Contraseña"/>
+                        <input class="iniciosesion-form-input-button nav-link btn btn-dark"  type="submit" value="Inicia Sesión">
+                        <p>¿No tienes una cuenta aún? <a href="registro.html">Regístrate</a></p>
+                        <p>¿Olvidaste tu <a href="contraseña.html">contraseña</a>?</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        
+        <footer>
+            <section>
+                <div>
+                    <img class="logo-footer" src="iconos/cubi_logo.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit.</p>        
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+                
+                <div class="footer-extra">
+                    <h3>Cubi</h3>
+                    <ul>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-extra">
+                    <h3>Contáctanos</h3>
+                    <ul>
+                        <li>+51 999 999 999</li>
+                        <li>correo@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="js/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>

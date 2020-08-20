@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='css/inicio.css')}}">
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='css/template.css')}}">
+    -->
+
+    <link rel= "stylesheet" type= "text/css" href="css/inicio.css">
+    <link rel= "stylesheet" type= "text/css" href="css/template.css">
+    <link rel="stylesheet" href="css/materiales.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Cubi | Inicio</title>
+    <!--
+    <link rel="icon"  href="{{ url_for('static', filename='cubi_logo.svg')}}" sizes="any">
+    -->
+    <link rel="icon"  href="iconos/cubi_logo.svg" sizes="any">
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar m-L-Nav" href="/">
+                <!--
+                <img class="logo" src="{{ url_for('static', filename='Untitled-1.svg')}}" alt="Logo">
+                -->
+                
+                <img class="logo" src="iconos/cubi_logo.svg" alt="Logo">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="large material-icons navToggler">menu</i>
+            </button>
+    
+            <div class="topnav collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="inicio.html"><p class="btn">Inicio</p><span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="mis-cursos.html"><p class="btn">Cursos</p></a></li>
+                    <li class="nav-item dropdown format3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p class="btn">Más</p>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Foro</a>
+                            <a class="dropdown-item" href="materiales.html">Materiales</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav m-R-Nav">
+                    <li class="nav-item"><a class="nav-link" href="planes.html"><p class="btn">Planes</p></a></li>
+                    <li class="nav-item dropdown format3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p class="btn">Nombre apellido</p>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Reanudar última clase</a>
+                            <a class="dropdown-item" href="mis-cursos.html">Cursos</a>
+                            <a class="dropdown-item" href="#">Ver Anotaciones</a>
+                            <a class="dropdown-item" href="{{ url_for('user.profile') }}">Perfil</a>
+                            <a class="dropdown-item" href="#">Configuración</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="{{ url_for('user.logout') }}">Cerrar Sesión</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="gen-under">
+            <div style="margin-top: 105px;">
+                <div class="mater-route">
+                    <a href="inicio.html">Inicio</a>
+                    <span>></span>
+                    <a href="materiales.html">Materiales</a>
+                    <span>></span>
+                    <a href="#">Nombre del curso</a>
+                </div>
+
+                <div class="mater-cursos-display"> 
+                    <div class="mater-cursos-group">
+                        <h2 class="h-mord">Premium</h2>
+                        <div style="display: flex;">
+                            <div style="position: relative;" class="mater-card-curso down-up">
+                                <span class="mater-card-curso-ribbon">
+                                    <img class="mater-card-ribbon-icon" src="iconos/Corona-blanco.svg" alt="">
+                                    <p>Premium</p>
+                                </span>
+                                <div class="mater-card-curso-top">   
+                                    <svg class="mater-card-icon" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566.32 492.24"><defs><style>.cls-1{fill:#7837f0;}.cls-2{fill:#2d125e;}</style></defs><title>File-morado</title>
+                                        <path class="cls-1" d="M0,462c0,16.71,12.8,30.26,28.58,30.26H537.74c15.79,0,28.58-13.55,28.58-30.26V86.19H0Z"/><path class="cls-2" d="M275,54.79l-.67.4L229.15,0H26.62C11.92,0,0,13.13,0,29.32v52a31.86,31.86,0,0,0,.29,4.29H0v.6H566.32V54.79Z"/></svg>
+                                    <p class="h-negr">## archivos</p>
+                                </div>
+                                <a href="#"  class="mater-card-curso-bottom">
+                                    <p class="h-blanc">Material Premium</p>
+                                </a>
+                            </div>
+
+                            <div class="mater-premium-contenido">
+                                <h4>Contiene</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mater-cursos-display"> 
+                    <div class="mater-cursos-group">
+                        <h2>Práctica calificada</h2>
+                        <div style="display: flex; flex-wrap: wrap;">
+
+                            <div class="mater-card-curso down-up">
+                                <div class="mater-card-curso-top">   
+                                    <svg class="mater-card-icon" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566.32 492.24"><defs><style>.cls-1{fill:#7837f0;}.cls-2{fill:#2d125e;}</style></defs><title>File-morado</title>
+                                        <path class="cls-1" d="M0,462c0,16.71,12.8,30.26,28.58,30.26H537.74c15.79,0,28.58-13.55,28.58-30.26V86.19H0Z"/><path class="cls-2" d="M275,54.79l-.67.4L229.15,0H26.62C11.92,0,0,13.13,0,29.32v52a31.86,31.86,0,0,0,.29,4.29H0v.6H566.32V54.79Z"/></svg>
+                                    <p class="h-negr">## archivos</p>
+                                </div>
+                                <a href="materiales-curso-carpeta.html"  class="mater-card-curso-bottom">
+                                    <p class="h-blanc">PC1</p>
+                                </a>
+                            </div>
+
+                            <div class="mater-card-curso down-up">
+                                <div class="mater-card-curso-top">   
+                                    <svg class="mater-card-icon" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566.32 492.24"><defs><style>.cls-1{fill:#7837f0;}.cls-2{fill:#2d125e;}</style></defs><title>File-morado</title>
+                                        <path class="cls-1" d="M0,462c0,16.71,12.8,30.26,28.58,30.26H537.74c15.79,0,28.58-13.55,28.58-30.26V86.19H0Z"/><path class="cls-2" d="M275,54.79l-.67.4L229.15,0H26.62C11.92,0,0,13.13,0,29.32v52a31.86,31.86,0,0,0,.29,4.29H0v.6H566.32V54.79Z"/></svg>
+                                    <p class="h-negr">## archivos</p>
+                                </div>
+                                <a href="#"  class="mater-card-curso-bottom">
+                                    <p class="h-blanc">PC2</p>
+                                </a>
+                            </div>
+
+                            <div class="mater-card-curso down-up">
+                                <div class="mater-card-curso-top">   
+                                    <svg class="mater-card-icon" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566.32 492.24"><defs><style>.cls-1{fill:#7837f0;}.cls-2{fill:#2d125e;}</style></defs><title>File-morado</title>
+                                        <path class="cls-1" d="M0,462c0,16.71,12.8,30.26,28.58,30.26H537.74c15.79,0,28.58-13.55,28.58-30.26V86.19H0Z"/><path class="cls-2" d="M275,54.79l-.67.4L229.15,0H26.62C11.92,0,0,13.13,0,29.32v52a31.86,31.86,0,0,0,.29,4.29H0v.6H566.32V54.79Z"/></svg>
+                                    <p class="h-negr">## archivos</p>
+                                </div>
+                                <a href="#"  class="mater-card-curso-bottom">
+                                    <p class="h-blanc">PC3</p>
+                                </a>
+                            </div>
+
+                            <div class="mater-card-curso down-up">
+                                <div class="mater-card-curso-top">   
+                                    <svg class="mater-card-icon" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566.32 492.24"><defs><style>.cls-1{fill:#7837f0;}.cls-2{fill:#2d125e;}</style></defs><title>File-morado</title>
+                                        <path class="cls-1" d="M0,462c0,16.71,12.8,30.26,28.58,30.26H537.74c15.79,0,28.58-13.55,28.58-30.26V86.19H0Z"/><path class="cls-2" d="M275,54.79l-.67.4L229.15,0H26.62C11.92,0,0,13.13,0,29.32v52a31.86,31.86,0,0,0,.29,4.29H0v.6H566.32V54.79Z"/></svg>
+                                    <p class="h-negr">## archivos</p>
+                                </div>
+                                <a href="#"  class="mater-card-curso-bottom">
+                                    <p class="h-blanc">PC4</p>
+                                </a>
+                            </div>
+                            
+                        </div>
+
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="mater-cursos-display"> 
+                    <div class="mater-cursos-group">
+                        <h2>Parcial/Final</h2>
+                        <div style="display: flex;">
+                            <div class="mater-card-curso down-up">
+                                <div class="mater-card-curso-top">   
+                                    <svg class="mater-card-icon" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566.32 492.24"><defs><style>.cls-1{fill:#7837f0;}.cls-2{fill:#2d125e;}</style></defs><title>File-morado</title>
+                                        <path class="cls-1" d="M0,462c0,16.71,12.8,30.26,28.58,30.26H537.74c15.79,0,28.58-13.55,28.58-30.26V86.19H0Z"/><path class="cls-2" d="M275,54.79l-.67.4L229.15,0H26.62C11.92,0,0,13.13,0,29.32v52a31.86,31.86,0,0,0,.29,4.29H0v.6H566.32V54.79Z"/></svg>
+                                    <p class="h-negr">## archivos</p>
+                                </div>
+                                <a href="#"  class="mater-card-curso-bottom">
+                                    <p class="h-blanc">Parcial</p>
+                                </a>
+                            </div>
+                            <div class="mater-card-curso down-up">
+                                <div class="mater-card-curso-top">   
+                                    <svg class="mater-card-icon" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566.32 492.24"><defs><style>.cls-1{fill:#7837f0;}.cls-2{fill:#2d125e;}</style></defs><title>File-morado</title>
+                                        <path class="cls-1" d="M0,462c0,16.71,12.8,30.26,28.58,30.26H537.74c15.79,0,28.58-13.55,28.58-30.26V86.19H0Z"/><path class="cls-2" d="M275,54.79l-.67.4L229.15,0H26.62C11.92,0,0,13.13,0,29.32v52a31.86,31.86,0,0,0,.29,4.29H0v.6H566.32V54.79Z"/></svg>
+                                    <p class="h-negr">## archivos</p>
+                                </div>
+                                <a href="#"  class="mater-card-curso-bottom">
+                                    <p class="h-blanc">Final</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <footer>
+            <section>
+                <div>
+                    <img class="logo-footer" src="iconos/cubi_logo.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit.</p>        
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+                
+                <div class="footer-extra">
+                    <h3>Cubi</h3>
+                    <ul>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-extra">
+                    <h3>Contáctanos</h3>
+                    <ul>
+                        <li>+51 999 999 999</li>
+                        <li>correo@gmail.com</li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+
+        <script src="js/app.js"></script>
+        <script src="js/scroll-out.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>

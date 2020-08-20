@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='css/inicio.css')}}">
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='css/template.css')}}">
+    -->
+
+    <link rel= "stylesheet" type= "text/css" href="css/cursos.css">
+    <link rel= "stylesheet" type= "text/css" href="css/inicio.css">
+    <link rel= "stylesheet" type= "text/css" href="css/template.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Cubi | Inicio</title>
+    <!--
+    <link rel="icon"  href="{{ url_for('static', filename='cubi_logo.svg')}}" sizes="any">
+    -->
+    <link rel="icon"  href="iconos/cubi_logo.svg" sizes="any">
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar m-L-Nav" href="/">
+                <!--
+                <img class="logo" src="{{ url_for('static', filename='Untitled-1.svg')}}" alt="Logo">
+                -->
+                
+                <img class="logo" src="iconos/cubi_logo.svg" alt="Logo">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="large material-icons navToggler">menu</i>
+            </button>
+    
+            <div class="topnav collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="inicio.html"><p class="btn">Inicio</p><span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="mis-cursos.html"><p class="btn">Cursos</p></a></li>
+                    <li class="nav-item dropdown format3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p class="btn">Más</p>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Foro</a>
+                            <a class="dropdown-item" href="materiales.html">Materiales</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav m-R-Nav">
+                    <li class="nav-item"><a class="nav-link" href="planes.html"><p class="btn">Planes</p></a></li>
+                    <li class="nav-item dropdown format3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p class="btn">Nombre apellido</p>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Reanudar última clase</a>
+                            <a class="dropdown-item" href="mis-cursos.html">Cursos</a>
+                            <a class="dropdown-item" href="#">Ver Anotaciones</a>
+                            <a class="dropdown-item" href="{{ url_for('user.profile') }}">Perfil</a>
+                            <a class="dropdown-item" href="#">Configuración</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="{{ url_for('user.logout') }}">Cerrar Sesión</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="sub-nav" class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="topnav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="mis-cursos.html"><p class="btn">Mis Cursos</p><span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogo.html"><p class="btn">Catálogo</p></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="inicio-cursos">
+            <div class="no-inscrito animo">
+                <div class="pos-titl">
+                    <div class="up-title-div-titl"></div>
+                    <h3 class="h-mord">¿Aún no estás inscrito?</h3>
+                </div>
+                <div class="animo-sub">        
+                    <p class="h-mord">Explora los cursos que tenemos para ti y elige la mejor opción</p>
+
+                    <section style="display: flow-root !important;">
+                        <div class="bi-divider">
+                            <img class="offer-icon" src="iconos/Negro/Free-negro.svg" alt="Gratis">
+                            <h3 class="h-negr">Versión Gratis</h3>
+                            <div class="sub-bi-divider h-negr">
+                                <div class="bi-divider">
+                                    <div class="sub-offer">
+                                        <img class="sub-offer-icon" src="iconos/Negro/Materiales-negro.svg" alt="Clases">
+                                        <div class="sub-offer-text">
+                                            <h3>Teoría</h3>
+                                            <p>Revisa rápidamente la teoría resumida de tu curso</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="sub-offer">
+                                        <img class="sub-offer-icon" src="iconos/Negro/Glosario-negro.svg" alt="Clases">
+                                        <div class="sub-offer-text">
+                                            <h3>Glosario</h3>
+                                            <p>Revisa los términos del curso y no dudes en tus examenes</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="bi-divider">
+                                    <div class="sub-offer">
+                                        <img class="sub-offer-icon" src="iconos/Negro/Documento-negro.svg" alt="Clases">
+                                        <div class="sub-offer-text">
+                                            <h3>Materiales</h3>
+                                            <p>Descarga todo el material pasado que necesites</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="sub-offer">
+                                        <img class="sub-offer-icon" src="iconos/Negro/Foro-negro.svg" alt="Clases">
+                                        <div class="sub-offer-text">
+                                            <h3>Foro</h3>
+                                            <p>Interactúa con tu comunidad y deshazte de tus dudas</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="line-divider"></div>
+
+                        <div class="bi-divider">
+                            <img class="offer-icon" src="iconos/Morado/Corona-morado.svg" alt="Premium">
+                            <h3 class="h-mord">Versión Premium</h3>
+                            <div class="sub-bi-divider h-mord">
+                                <div class="bi-divider">
+                                    <div class="sub-offer">
+                                        <img class="sub-offer-icon" src="iconos/Morado/Clases-morado.svg" alt="Videos">
+                                        <div class="sub-offer-text">
+                                            <h3>Videos</h3>
+                                            <p>Clases grabadas sobre cada tema que puedes ver cuando quieras</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="sub-offer">
+                                        <img class="sub-offer-icon" src="iconos/Morado/Documento-morado.svg" alt="Clases">
+                                        <div class="sub-offer-text">
+                                            <h3>Material Exclusivo</h3>
+                                            <p>Prácticas solucionadas explicadas con detalle y más</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="bi-divider">
+                                    <div class="sub-offer">
+                                        <img class="sub-offer-icon" src="iconos/Morado/Ejercicios-morado.svg" alt="Clases">
+                                        <div class="sub-offer-text">
+                                            <h3>Ejercicios extra</h3>
+                                            <p>Ejercicios dinámicos para que entiendas paso a paso su solución</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="sub-offer">
+                                        <img class="sub-offer-icon" src="iconos/Morado/Whatsapp-morado.svg" alt="Clases">
+                                        <div class="sub-offer-text">
+                                            <h3>Contacto</h3>
+                                            <p>Realiza todas tus consultas al profesor del curso cuando quieras</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div>
+                        <p>Si quieres saber más, explora los <a href="planes.html">planes</a> que tenemos para ti</p>
+
+                        <a class="nav-link btn-centered" href="catalogo.html"><p class="btn btn-dark btn-special">Eplorar cursos</p></a>
+     
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <section>
+                <div>
+                    <img class="logo-footer" src="iconos/cubi_logo.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit.</p>        
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+                
+                <div class="footer-extra">
+                    <h3>Cubi</h3>
+                    <ul>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-extra">
+                    <h3>Contáctanos</h3>
+                    <ul>
+                        <li>+51 999 999 999</li>
+                        <li>correo@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/app.js"></script>
+        <script src="js/scroll-out.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>

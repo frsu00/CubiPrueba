@@ -1,0 +1,215 @@
+.mater-cursos {
+    display: flex;
+}
+
+/* Menú a la izquierda */
+
+.mater-menu {
+    background-color: white;
+    min-width: 340px;
+    box-shadow: 9px 0px 8px -9px #B7B7B7;
+}
+
+.mater-menu h2 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #2D125E;
+}
+
+.mater-cursos-lista {
+    background-color: white;
+}
+
+.mater-cursos-lista ul {
+    padding-left: 0;
+}
+
+.mater-cursos-lista li {
+    font-size: 14px;
+    list-style: none;
+    width: 295px;
+    top: 20px;
+}
+
+.mater-carpeta {
+    width: 310px;
+    display: inline-flex;
+    margin-top: 16px;
+}
+
+.mater-carpeta-total {
+    width: 310px;
+    display: inline-flex;
+}
+
+.mater-cursos-lista li button {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.mater-cursos-lista li a {
+    display: -webkit-inline-box;
+    width: 275px;
+}
+
+.mater-cursos-lista li a img {
+    height: 15px;
+    box-shadow: 1px 2px 3px 0px #B7B7B7;
+}
+
+.mater-cursos-lista li a p {
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.mater-cursos-lista li section {
+    margin-left: 55px;
+    margin-top: 5px;
+}
+
+.display-tree,.display-pin {
+    background-color: white;
+    border: 0px;
+}
+
+.display-tree img {
+    height: 1em;
+    margin-top: -4px;
+}
+
+.display-pin img {
+    height: 1.2em;
+    margin-top: -4px;
+}
+
+/* Cartas de cursos */
+
+.mater-cursos-display {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.mater-cursos-group {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.mater-card-curso {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 25px;
+    box-shadow: 1px 7px 14px -3px #B7B7B7;
+    height: 220px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.mater-card-icon {
+    height: 55px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.mater-card-sub-icon {
+    height: 22.5px;
+    margin-left: 5px;
+}
+
+.mater-card-sub-icon:hover {
+    text-decoration: none !important; 
+    transform: scale(1.15,1.15);
+    transition-duration: .5s;
+}
+
+.mater-card-curso-top {
+    width: 180px;
+    height: 140px;
+    background-color: white;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.mater-card-curso-top p {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.mater-card-curso-bottom {
+    width: 180px;
+    height: 80px;
+    background-color: #8F53FF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.mater-card-curso-bottom p,.mater-card-curso-file-bottom p {
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-weight: 500;
+}
+
+.hidden {
+    display:none;
+}
+
+.mater-route {
+    margin-left: 80px;
+}
+
+.mater-route a {
+    color: #5828B0;
+    font-size: 16px;
+}
+
+.mater-premium-contenido {
+    margin-left: 35px;
+}
+
+.mater-card-curso-file {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 25px;
+    box-shadow: 1px 7px 14px -3px #B7B7B7;
+    height: 160px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.mater-card-curso-file-top {
+    width: 180px;
+    background-color: white;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 100px;
+}
+
+.mater-card-curso-file-bottom {
+    width: 180px;
+    height: 60px;
+    background-color: #8F53FF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}

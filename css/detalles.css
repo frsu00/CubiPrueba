@@ -1,0 +1,21 @@
+.detall-curso {
+    margin-top: 74px;
+    height: 500px;
+    background-color: white;
+    vertical-align: middle;
+}
+
+.detall-header {
+    height: 180px;
+    background-color: #8F53FF;
+    padding-top: 40px;
+    padding-left: 60px;
+}
+
+.detall-header h3 {
+    font-size: 38px;
+}
+
+.detall-route a{
+    color: white;
+}

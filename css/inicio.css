@@ -1,0 +1,339 @@
+/* Carátula */
+body {
+  background-color: #ffffff;
+}
+
+.caratula { 
+    margin-top: 117px;
+    height:81vh;
+    margin-left: 10%;
+    margin-right: 6%;
+    min-height: 450px;
+    display: flex;
+}
+
+.caratula-img  {
+    margin: auto;
+    margin-top: 10px;
+    height: 350px;
+}
+
+.gen-h1 {
+    font-size: 60px;
+    font-weight: 650;
+    color: #5828B0;
+    margin-bottom: 1.5rem;
+    margin-right: 20%;
+    max-width:350px;
+    margin-top: 3.5rem;
+    min-width: 335px;
+}
+
+.gen-h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #5828B0;
+}
+
+.gen-p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #5828B0;
+    max-width:410px;
+}
+
+/* Sección sin definir */
+
+.sindefinir {
+    height:350px;
+    background-color:#8F53FF;
+    margin-bottom:15px;
+}
+
+/* Sección servicios ofrecidos */
+
+.ofrecemos {
+    background-color:#F2F2F2;
+    padding-bottom: 80px;
+}
+
+.logo-ofrecemos {
+    height: 410px;
+    right: 8%;
+    margin: auto;
+    margin-top: 220px;
+}
+
+.ofrecemos-animate {
+    width: 290px;
+}
+
+.gen-cartas {
+    margin-top: 120px;
+    margin-left: 4%;
+    margin-right: 0;
+}
+
+.cards-ofre {
+    display: flex;
+    margin-top: 20px;
+}
+
+.dark-1 {
+    width:350px;
+    background-color:#404040;
+    border-radius: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.dark-1 h4 {
+    font-size: 30px;
+    font-weight: 650;
+}
+
+.dark-1 p {
+    margin-top: 15px;
+    font-weight: 200;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dark-2 {
+    width:200px;
+    background-color:white;
+    border-radius: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+    right: 100px;
+    z-index: 0;
+}
+
+.dark-2 div {
+    position: absolute;
+    color: #8F53FB;
+    padding-bottom: 0;
+    margin-top: 23px;
+    margin-right: 0;
+    margin-left: 118px;
+    font-weight: 650;
+}
+
+.dark-2-icon {
+    height: 35px;
+}
+
+/* Sección  Animaste */
+.animo-sub {
+    text-align: center;
+    position: relative;
+    margin:90px auto;
+    margin-bottom: 70px;
+}
+
+.animo-sub p {
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+/* Animaciones */
+
+#Cubi-chica {
+    animation: cubo 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes cubo {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(40px);
+    }
+}
+
+/* Desplazamiento */
+
+#cards-ofre-ejercicios[data-scroll="in"] {
+    transform: translateX(10%);
+    transition: 1s;
+}
+
+#cards-ofre-teoria[data-scroll="in"] {
+    transform: translateX(15%);
+    transition: 1s;
+}
+
+#cards-ofre-materiales[data-scroll="in"] {
+    transform: translateX(20%);
+    transition: 1s;
+}
+
+#cards-ofre-foro[data-scroll="in"] {
+    transform: translateX(25%);
+    transition: 1s;
+}
+
+#cards-ofre-glosario[data-scroll="in"] {
+    transform: translateX(30%);
+    transition: 1s;
+}
+
+
+
+@media (max-width: 991px) {
+
+    /* NavBar */
+
+    .navbar {
+        padding-top:10px;
+        padding-bottom: 5px !important;
+    }
+
+    .m-R-Nav {
+        margin-right: 0% !important;
+    }
+
+    .m-L-Nav {
+        margin-left: 0%;
+    }
+
+    .nav-link {
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+
+    /* Carátula */
+    
+    .caratula { 
+        margin-top: 110px;
+        height:82vh;
+        margin-right: 4%;
+        margin-left: 8%;
+    }
+
+    .topnav li {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .topnav li.active {
+        border-bottom: 3px solid #f8f9fa;
+    }
+
+    .topnav li:hover {
+        border-bottom: 3px solid #f8f9fa;
+        background-color: rgb(189, 161, 241);
+    }
+
+    .topnav li.nav-item.dropdown.format3 {
+        border-bottom: 3px solid #f8f9fa;
+    }
+
+    div.split.right {
+        display: none;
+    }
+
+    .split {
+        height: 400px;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .left {
+        left: -10%;
+    }
+
+    .split-text2 h1 {
+        margin-right: 0%;
+    }
+
+    .offer {
+        height: 510px;
+    }
+    .laptop-sub{
+        transform: translateY(5%);
+    }
+
+    /**/
+
+    .ofrecemos-animate {
+        width: 80%;
+    }
+}
+
+@media (max-width: 760px) {
+    .caratula {
+        min-height: 81vh;
+    }
+
+    .caratula-img {
+        display: none;
+    }
+
+    .gen-h1 {
+        max-width: 1024px;
+        margin-right: 0;
+        margin-top: 35px;
+    }
+
+    #Cubi-chica {
+        display: none;
+    }
+}
+
+@media (max-width: 703px) {
+
+    .gen-cartas {
+        margin-left: 9%;
+    }
+
+    .dark-1 {
+        width: 290px;
+    }
+    /* Desplazamiento */
+
+    #cards-ofre-ejercicios[data-scroll="in"] {
+        transform: translateX(0);
+    }
+
+    #cards-ofre-teoria[data-scroll="in"] {
+        transform: translateX(0);
+    }
+
+    #cards-ofre-glosario[data-scroll="in"] {
+        transform: translateX(0);
+    }
+
+    #cards-ofre-foro[data-scroll="in"] {
+        transform: translateX(0);
+    }
+
+    #cards-ofre-materiales[data-scroll="in"] {
+        transform: translateX(0);
+    }
+    
+
+    .dark-1 h4 {
+        font-size: 24px;
+        font-weight: 650;
+    }
+
+    .dark-1 p {
+        margin-top: 1px;
+        font-weight: 200;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
+
+    
+
+}
